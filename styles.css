@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	background-color: #AAAAAA;
+	color: #FFFFFF;
+	
+}
+
+.button-box {
+	height: 150px;
+	padding-left: 1em;	
+	display: flex;
+	align-items: center;
+	
+}
+
+
+
+button {
+	width: 50px;
+	height: 50px;
+	background-color: #189ad3;
+	color: #FFFFFF;
+	border: none;
+}
+button:focus{
+	outline: none;
+}
+
+/*The various buttons*/
+.expand1 {
+	font-size: 1.3em;
+	margin: 0.5em;
+	width: 75px;
+	height: 50px;
+	border-radius: 50%;
+	transition-duration: .3s;
+	transform: rotateX(45deg);
+	box-shadow:3px 4px 9px 3px RGBA(0, 0, 0, 0.2)
+}
+.expand1:hover {
+	height: 75px;
+	transform: scale(1.1);
+	box-shadow: none;
+}
+
+.integr {
+	background-color: #AAAAAA;
+	margin: 1em;
+	border-radius: 50%;
+	box-shadow:4px 4px 10px RGBA(0, 0, 0, 0.3), 
+				-4px -4px 5px rgba(255, 255, 255, 0.15);
+}
+
+.integr:hover {
+	box-shadow:4px 4px 10px RGBA(0, 0, 0, 0.3), 
+				-4px -4px 5px rgba(255, 255, 255, 0.15),
+				4px 4px 10px RGBA(0, 0, 0, 0.3) inset, 
+				-4px -4px 5px rgba(255, 255, 255, 0.15) inset;
+	color: #71c7ec;
+}
+
+.keyboard {
+	width: 100px;
+	background-color: #71c7ec;
+	margin: 1px;
+	color: #107dac;
+	border: solid #107dac 2px;
+	border-radius: 15px;
+	
+	transform-style: preserve-3d;
+   	transition: all 50ms cubic-bezier(0, 0, 1, 1);
+	box-shadow: 0 0.5em 0 0 #35afe3, 0 1em 0 0 #107dac;
+}
+.keyboard:first-child{
+	width: 50px;
+	margin-left: 1em;
+}
+.keyboard:hover {
+	background: #a5dcf3;
+  	transform: translate(0, 0.5em);
+}
+
+.flip {
+	width: 125px;
+	height: 30px;
+	color: #000000;
+	border: solid 1px;
+	background-color: #AAAAAA;
+	transition-duration: .3s;
+}
+.flip:hover{
+	width: 200px;
+	color: #AAAAAA;
+	background-color: #000000;
+}
+
+
+
+
